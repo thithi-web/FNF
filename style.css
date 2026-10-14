@@ -1,0 +1,214 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*video de fundo*/
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+
+}
+
+/*COMADA ESCURA DO VIDEO*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 34, 30, 0.5);
+    z-index: -1;
+}
+
+/*CONATAINER PRINCIPAL*/
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 90px;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(105, 248, 170);
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.redes i{
+    cursor: pointer;
+}
+
+.redes i:hover{
+    color: rgb(50, 207, 207);
+    transition: 0.2s;
+}
+
+/*ÁREA PRINCIPAL*/
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start ;
+}
+
+.texto{
+    width: 45%;
+}
+
+.texto h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.texto p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-ciano{
+    background-color: rgb(50, 207, 207);
+    border-radius: 40px;
+}
+
+.btn-ciano:hover{
+    background-color: transparent;
+    border: 2px solid rgb(50, 207, 207) ; 
+    transform: scale(1.2);
+    transition: 0.3;
+    
+}
+
+.btn-transp{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(50, 207, 207);
+    border-radius: 40px;
+}
+
+.btn-transp:hover{
+    color: white;
+    background-color: rgb(50, 207, 207);
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+img {
+    width: 300px;
+}
+
+.musicas{
+    height: 100vh;
+    background-color: black;
+    padding: 80px;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(41, 41, 41);
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;    
+}
+
+.card h3{
+    padding: 20px 20px 10px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.card p {
+    padding: 0px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    background-color: rgb(89, 219, 148);
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card a:hover{
+    background-color: rgb(67, 167, 112);
+}
